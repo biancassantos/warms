@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header #logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #CFBA6D;
+}
+
+header ul {
+    list-style: none;
+}
+
+.desktop-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mobile-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 2rem;
+}
+
+.mobile-menu {
+    position: absolute;
+    top: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 0px;
+    overflow: hidden;
+    pointer-events: none;
+    opacity: 0;
+    margin: 0 auto;
+    padding: 1rem 0;
+    background-color: #FFF;
+    transition: .3s;
+}
+
+.open {
+    height: 350px;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.menu-link, .shop-link {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #000;
+    padding: 8px 15px;
+    transition: .3s;
+}
+
+.menu-link:hover {
+    color: #cacaca;
+}
+
+.mobile-menu ul .menu-link {
+    width: 300px;
+    display: block;
+}
+
+
+.shop-link {
+    display: none;
+}
+
+header .costumer-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .8rem;
+}
+
+.costumer-icons a i {
+    font-size: 1.2rem;
+    padding: 10px;
+    color: #000;
+}
+
+.costumer-icons .account-btn {
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.costumer-icons .account-btn i {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+@media screen and (max-width: 750px) {
+    .desktop-menu {
+        display: none;
+    }
+
+    .shop-link {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    header #logo {
+        font-size: 1.6rem;
+    }
+}
