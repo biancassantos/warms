@@ -2,3 +2,150 @@ body {
     max-width: 1020px;
     margin: 0 auto;
 }
+
+/* --- CAROUSSEL --- */
+.slider {
+    max-width: 1020px;
+    height: auto;
+    overflow: hidden;
+}
+
+.slider-content {
+    display: flex;
+    width: 400%;
+    height: auto;
+}
+
+.slider-content input {
+    display: none;
+}
+
+.slide-box {
+    position: relative;
+    width: 25%;
+    height: auto;
+    text-align: center;
+    transition: 1s;
+}
+
+.slide-box img {
+    width: 100%;
+}
+
+.nav-manual, .nav-auto {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 34%;
+}
+
+.nav-manual .manual-btn, .nav-auto div {
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.nav-manual .manual-btn:hover {
+    background-color: #FFF;
+}
+
+.nav-manual .manual-btn:not(:last-child),
+.nav-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+
+#radio1:checked ~ .nav-auto .auto-btn1,
+#radio2:checked ~ .nav-auto .auto-btn2,
+#radio3:checked ~ .nav-auto .auto-btn3 {
+    background-color: #FFF;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0%;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+/* --- H2 --- */
+h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+/* --- BUTTON --- */
+main button {
+    border: none;
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 500;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+main button:active {
+    scale: .9;
+}
+
+/* --- POPULAR --- */
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 1rem;
+}
+
+.popular-products {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    width: 100%;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 230px;
+}
+
+.product-container img {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.product-name, .product-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.product-name h3, .product-name i {
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.product-price p {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.add-btn {
+    background-color: #F4EDD4;
+    margin-top: 1.2rem;
+}

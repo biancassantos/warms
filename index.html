@@ -39,6 +39,112 @@
         </nav>
     </header>
 
+    <main>
+        <!-- CAROUSEL -->
+        <section class="slider">
+            <div class="slider-content">
+                <input type="radio" name="btn-radio" id="radio1">
+                <input type="radio" name="btn-radio" id="radio2">
+                <input type="radio" name="btn-radio" id="radio3">
+
+                <div class="slide-box first">
+                    <a href="#">
+                        <img class="desktop-img" src="img/slide-1.jpg" alt="New collection slide">
+                    </a>
+                </div>
+
+                <div class="slide-box">
+                    <a href="#">
+                        <img class="desktop-img" src="img/slide-2.jpg" alt="Jeans slide">
+                    </a>
+                </div>
+
+                <div class="slide-box">
+                    <a href="#">
+                        <img class="desktop-img" src="img/slide-3.jpg" alt="Packaging slide">
+                    </a>
+                </div>
+
+                <div class="nav-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                </div>
+
+                <div class="nav-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular">
+            <h2>popular</h2>
+            <div class="popular-products">
+
+                <div class="product-container">
+                    <img src="img/sc-1.jpg" alt="green hoodie">
+                    <div class="product-name">
+                        <h3>green hoodie</h3>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-price">
+                        <p>$64.00</p>
+                        <select name="quantity" id="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <button class="add-btn">add to cart</button>
+                </div>
+
+                <div class="product-container">
+                    <img src="img/bw-3.jpg" alt="white blouse">
+                    <div class="product-name">
+                        <h3>white blouse</h3>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-price">
+                        <p>$30.00</p>
+                        <select name="quantity" id="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <button class="add-btn">add to cart</button>
+                </div>
+
+                <div class="product-container">
+                    <img src="img/bw-1.jpg" alt="black hoodie">
+                    <div class="product-name">
+                        <h3>black hoodie</h3>
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="product-price">
+                        <p>$64.00</p>
+                        <select name="quantity" id="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <button class="add-btn">add to cart</button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
     <script src="scripts/script.js"></script>
+    <script src="scripts/carousel.js"></script>
 </body>
 </html>
