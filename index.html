@@ -29,6 +29,7 @@
                 <i class="fa-regular fa-circle-user"></i>
             </button>
         </div>
+        
         <!-- MOBILE -->
         <nav class="mobile-menu">
             <ul>
@@ -79,12 +80,15 @@
             </div>
         </section>
 
+        <!-- POPULAR -->
         <section class="popular">
             <h2>popular</h2>
             <div class="popular-products">
 
                 <div class="product-container">
-                    <img src="img/sc-1.jpg" alt="green hoodie">
+                    <a href="#">
+                        <img src="img/sc-1.jpg" alt="green hoodie">
+                    </a>
                     <div class="product-name">
                         <h3>green hoodie</h3>
                         <i class="fa-regular fa-heart"></i>
@@ -103,7 +107,9 @@
                 </div>
 
                 <div class="product-container">
-                    <img src="img/bw-3.jpg" alt="white blouse">
+                    <a href="#">
+                        <img src="img/bw-3.jpg" alt="white blouse">
+                    </a>
                     <div class="product-name">
                         <h3>white blouse</h3>
                         <i class="fa-regular fa-heart"></i>
@@ -122,7 +128,9 @@
                 </div>
 
                 <div class="product-container">
-                    <img src="img/bw-1.jpg" alt="black hoodie">
+                    <a href="#">
+                        <img src="img/bw-1.jpg" alt="black hoodie">
+                    </a>
                     <div class="product-name">
                         <h3>black hoodie</h3>
                         <i class="fa-regular fa-heart"></i>
@@ -142,7 +150,80 @@
 
             </div>
         </section>
+
+        <!-- COLLECTIONS -->
+        <section class="collections">
+            <h2>collections</h2>
+            <div class="collections-container">
+
+                <div class="row1">
+                    <div class="collection soft-colors">
+                        <a href="#">
+                            <h3>soft colors</h3>
+                        </a>
+                    </div>
+                    <div class="collection mini-bags">
+                        <a href="#">
+                            <h3>mini bags</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row2">
+                    <div class="collection black-white">
+                        <a href="#">
+                            <h3>black and white</h3>
+                        </a>
+                    </div>
+                    <div class="collection earthy">
+                        <a href="#">
+                            <h3>earthy</h3>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <button class="view-btn">view all</button>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="newsletter">
+            <aside>
+                <h3>15% off in your first purchase</h3>
+                <p>subscribe to our newsletter to receive your 15% off coupon, news, promos and more.</p>
+                <form>
+                    <label for="email">e-mail:</label><br>
+                    <input type="email" name="email" id="email" required>
+                    <input type="button" value="subscribe">
+                </form>
+            </aside>
+        </section>
     </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div>
+            <h3 class="logo-footer">warms</h3>
+            <p>© warms,<br>2016-2024</p>
+        </div>
+        <div>
+            <ul>
+                <li><a href="#">our story</a></li>
+                <li><a href="#">company policy</a></li>
+                <li><a href="#">work with us</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h3>contact us</h3>
+            <p>store@contact.com</p>
+            <p>000-000-000</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <script src="scripts/script.js"></script>
     <script src="scripts/carousel.js"></script>

@@ -1,7 +1,6 @@
 const dropdownLink = document.querySelector('.shop-link');
 const mobileMenu = document.querySelector('.mobile-menu');
 const links = document.querySelectorAll('.menu-link')
-let favorite = document.querySelector('.favorite')
 
 // menu toggle
 dropdownLink.addEventListener('click', () => {

@@ -3,6 +3,10 @@ body {
     margin: 0 auto;
 }
 
+main {
+    margin-bottom: 5rem;
+}
+
 /* --- CAROUSSEL --- */
 .slider {
     max-width: 1020px;
@@ -78,23 +82,24 @@ body {
 
 /* --- H2 --- */
 h2 {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     font-weight: 500;
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
 /* --- BUTTON --- */
-main button {
+main button, input[type="button"] {
     border: none;
     text-transform: uppercase;
     font-size: .9rem;
     font-weight: 500;
     padding: 5px 15px;
     cursor: pointer;
+    transition: .2s;
 }
 
-main button:active {
+main button:active, input[type="button"]:active {
     scale: .9;
 }
 
@@ -103,7 +108,7 @@ main button:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem 1rem;
+    padding: 5rem 1rem;
 }
 
 .popular-products {
@@ -119,7 +124,7 @@ main button:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 230px;
+    width: 220px;
 }
 
 .product-container img {
@@ -140,6 +145,10 @@ main button:active {
     margin-bottom: 8px;
 }
 
+.product-name i {
+    cursor: pointer;
+}
+
 .product-price p {
     font-size: 1.1rem;
     font-weight: 700;
@@ -147,5 +156,179 @@ main button:active {
 
 .add-btn {
     background-color: #F4EDD4;
-    margin-top: 1.2rem;
+    margin-top: 1.4rem;
+}
+
+/* --- COLLECTIONS --- */
+.collections {
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.row1, .row2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.collection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 310px;
+    padding: 1rem;
+    background-color: lightgrey;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.soft-colors {
+    background-image: url('../img/soft-colors.jpg');
+    width: 60%;
+}
+
+.mini-bags {
+    background-image: url('../img/mini-bags.jpg');
+    width: 40%;
+}
+
+.black-white {
+    background-image: url('../img/black-and-white.jpg');
+    width: 40%;
+}
+
+.earthy {
+    background-image: url('../img/earthy.jpg');
+    width: 60%;
+}
+
+.collection a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 1rem;
+    transition: .3s;
+}
+
+.collection a:hover {
+    color: #F4EDD4;
+}
+
+.collection h3 {
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+
+.view-btn {
+    margin-top: 2rem;
+    background-color: #000;
+    color: #FFF;
+}
+
+/* --- NEWSLETTER --- */
+.newsletter {
+    display: flex;
+    align-items: center;
+    height: 370px;
+    padding: 2rem;
+    background: url('../img/newsletter.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.newsletter aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    color: #FFF;
+}
+
+aside h3 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+aside p {
+    max-width: 450px;
+    margin-bottom: 1rem;
+}
+
+aside form input[type="email"] {
+    border: none;
+    font-size: 1rem;
+    padding: 5px;
+    width: 270px;
+}
+
+aside form input[type="button"] {
+    padding: 6px 10px;
+    background-color: #F4EDD4;
+    color: #000;
+    cursor: pointer;
+}
+
+/* --- FOOTER --- */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F4EDD4;
+    padding: 4rem 1rem;
+}
+
+footer div .logo-footer {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+footer div ul {
+    list-style: none;
+}
+
+footer div ul li {
+    padding: 1rem;
+}
+
+footer div ul li a {
+    color: #000;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 1rem;
+    transition: .3s;
+}
+
+footer div ul li a:hover {
+    color: #CFBA6D;
+}
+
+footer .contact {
+    text-align: end;
+
+}
+
+footer .contact h3 {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+footer .contact .social-icons {
+    margin-top: 1.5rem;
+}
+
+footer .contact .social-icons a {
+    color: #000;
+    font-size: 1.3rem;
+    transition: .3s;
+}
+
+footer .contact .social-icons a:hover {
+    color: #CFBA6D;
+}
+
+footer .contact .social-icons a:not(:last-child) {
+    margin-right: 10px;
 }

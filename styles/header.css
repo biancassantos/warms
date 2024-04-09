@@ -54,6 +54,7 @@ header ul {
     overflow: hidden;
     pointer-events: none;
     opacity: 0;
+    z-index: 100;
     margin: 0 auto;
     padding: 1rem 0;
     background-color: #FFF;
@@ -75,7 +76,7 @@ header ul {
 }
 
 .menu-link:hover {
-    color: #cacaca;
+    color: #CFBA6D;
 }
 
 .mobile-menu ul .menu-link {
