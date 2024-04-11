@@ -1,10 +1,22 @@
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1100px) {
     .nav-manual, .nav-auto {
         margin-top: 47%;
     }
 }
 
 @media screen and (max-width: 730px) {
+    .mobile-img {
+        display: block;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    .nav-manual, .nav-auto {
+        margin-top: 60%;
+    }
+
     .popular-products {
         justify-content: center;
         gap: 3rem;
@@ -16,6 +28,14 @@
 }
 
 @media screen and (max-width: 580px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .product-container {
+        width: 200px;
+    }
+
     .row1, .row2 {
         flex-direction: column;
     }

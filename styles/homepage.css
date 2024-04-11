@@ -20,7 +20,7 @@ main {
     height: auto;
 }
 
-.slider-content input {
+.slider-content input, .mobile-img {
     display: none;
 }
 
